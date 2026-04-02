@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myPortfolio.py</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-tab active">
+      <a href="#about"><span class="tab-icon">🥷 </span>about.py</a>
+    </div>
+    <div class="nav-tab">
+      <a href="#projects"><span class="tab-icon">🗂️ </span>projects.py</a>
+    </div>
+    <div class="nav-tab">
+      <a href="#contact"><span class="tab-icon">📞 </span>contact.py</a>
+    </div>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <p class="comment"># about.py</p>
+    <p class="comment"># Hi, welcome to my portfolio!</p>
+
+    <div class="code-block">
+      <p>
+        <span class="keyword">name</span> = <span class="string">"Allen James Vidal"</span>
+      </p>
+
+      <p>
+        <span class="keyword">interests</span> = <span class="string">["Coding", "Problem Solver", "Automation", "Data
+          Manipulation"]</span>
+      </p>
+
+      <p>
+        <span class="keyword">ai_tools</span> =
+        <span class="string">["Claude", "ChatGPT"]</span>
+        <span class="comment"> # my idea executors 🤖</span>
+      </p>
+    </div>
+
+    <div class="code-block">
+      <p><span class="keyword">bio</span> = <span class="string">"""</span></p>
+      <p class="string indent">
+        Data Specialist with hands-on experience in data cleaning, tagging,
+        and automation using Excel, SQL, Power BI, and Python. I build
+        extraction scripts, dashboards, and ML prototypes — with a strong
+        interest in data engineering and scalable data workflows.
+      </p>
+      <p><span class="string">"""</span></p>
+    </div>
+
+    <div class="code-block">
+      <p><span class="classname">experience</span> = [</p>
+
+      <div class="indent">
+        <p>{</p>
+        <div class="indent">
+          <p><span class="keyword">"company"</span>: <span class="string">"Unilever"</span>,</p>
+          <p><span class="keyword">"role"</span>: <span class="string">"Data Specialist"</span>,</p>
+          <p><span class="keyword">"period"</span>: <span class="string">"08/2025"</span>,</p>
+          <p><span class="keyword">"location"</span>: <span class="string">"BGC, Taguig"</span>,</p>
+          <p><span class="keyword">"highlights"</span>: [</p>
+          <div class="indent">
+            <p><span class="string">"Tagged and validated SKU data using Excel across CRM and POS datasets"</span>,</p>
+            <p><span class="string">"Built Power BI and Excel dashboards to track operational performance"</span>,</p>
+            <p><span class="string">"Automated reporting tasks using Python (Pandas)"</span>,</p>
+            <p><span class="string">"Built web scraping and PDF extraction scripts (Playwright, pdfplumber)"</span>,</p>
+            <p><span class="string">"Prototyped ML model for SKU tagging using TF-IDF and Logistic Regression"</span>,
+            </p>
+          </div>
+          <p>]</p>
+        </div>
+        <p>},</p>
+
+        <p>{</p>
+        <div class="indent">
+          <p><span class="keyword">"company"</span>: <span class="string">"Philippine Statistics Authority
+              (PSA)"</span>,</p>
+          <p><span class="keyword">"role"</span>: <span class="string">"Map Data Processor"</span>,</p>
+          <p><span class="keyword">"period"</span>: <span class="string">"10/2024 – 06/2025"</span>,</p>
+          <p><span class="keyword">"location"</span>: <span class="string">"Batangas City, Batangas"</span>,</p>
+          <p><span class="keyword">"highlights"</span>: [</p>
+          <div class="indent">
+            <p><span class="string">"Processed and validated GIS-based census data using QGIS and QField"</span>,</p>
+            <p><span class="string">"Performed building digitization, map updates, and EA delineation"</span>,</p>
+            <p><span class="string">"Ensured accuracy of geospatial datasets for national census operations"</span>,</p>
+          </div>
+          <p>]</p>
+        </div>
+        <p>},</p>
+      </div>
+
+      <p>]</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <p class="comment"># projects.py</p>
+    <p class="comment"># here are some things I've built</p>
+
+    <div class="jupyter-cell">
+
+      <div class="cell-input">
+        <span class="cell-label">In [1]:</span>
+        <div class="code-block">
+          <p><span class="keyword">import</span> <span class="classname">os</span></p>
+          <br>
+          <p><span class="keyword">project_dir</span> = <span class="string">"/tutorial/task/skills/projects/"</span>
+          </p>
+          <br>
+          <p><span class="keyword">for</span> <span class="classname">projects</span> <span class="keyword">in</span>
+            <span class="classname">os</span>.listdir(<span class="keyword">project_dir</span>):
+          </p>
+          <div class="indent">
+            <p><span class="classname">open</span>(<span class="classname">projects</span>)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cell-output">
+        <span class="cell-label">Out [1]:</span>
+        <div class="output-box">
+
+          <div class="project-card">
+            <img src="img-vid/mlSkuAutoTagger.png" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">ML SKU Auto-Tagger</h3>
+              <p class="project-desc">Prototyped a machine learning model that automatically categorizes SKUs using
+                TF-IDF and Logistic Regression — reducing manual tagging time significantly.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">Logistic Regression</span>
+              </div>
+              <a href="https://github.com/yourusername" target="_blank" class="github-link">🐙 View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="img-vid/dataScraping.png" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">Data Scraping</h3>
+              <p class="project-desc">Built a Python pipeline to scrape web content, extract data from PDFs, and Excel,
+                converting unstructured information into clean structured datasets.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Playwright</span>
+                <span class="tag">pdfplumber</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">CSV</span>
+                <span class="tag">Converting scripts into Functions</span>
+              </div>
+              <a href="https://github.com/AJEV04/portfolioProjects/tree/main/projects/Data%20Scraping" target="_blank"
+                class="github-link">🐙 View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="img-vid/sqlProj.png" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">SQL Queries</h3>
+              <p class="project-desc">Practiced writing SQL queries starting from basics like counting cases by
+                location, then moved to intermediate queries using subqueries and CTEs for averages and filtering. We
+                tackled advanced topics like calculating recovery rates and handling division safely.</p>
+              <div class="project-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">Data Aggregation</span>
+                <span class="tag">Subqueries</span>
+                <span class="tag">CTEs</span>
+                <span class="tag">Data Functions</span>
+                <span class="tag">Calculation & Ratios</span>
+              </div>
+              <a href="https://github.com/AJEV04/portfolioProjects/tree/main/projects/SQL%20Queries" target="_blank"
+                class="github-link">🐙 View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="img-vid/dashboardDaph.png" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">Emerson x DAPH (Data Analytics Philippines) National Data Challenge 2025</h3>
+              <p class="project-desc">A 30-day Power BI dashboard competition using real-world manufacturing data,
+                highlighting top data storytellers from across the country.</p>
+              <div class="project-tags">
+                <span class="tag">Advanced Power BI design and techniques</span>
+                <span class="tag">Hands-on experience, real world datasets and problem solving strategies</span>
+                <span class="tag">Translating data into actionable business recommendations</span>
+              </div>
+              <a href="https://github.com/AJEV04/portfolioProjects/tree/main/projects/Emerson%20x%20DAPH%20(Data%20Analytics%20Philippines)%20National%20Data%20Challenge%202025"
+                target="_blank" class="github-link">🐙 View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="img-vid/dashboardDsa.png" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">DataSense Analytics (DSA) Challenge</h3>
+              <p class="project-desc">DSA Data Challenge 2025 Hosted by DataSense Analytics A nationwide competition
+                where participants transform a healthcare dataset into actionable insights using Power BI Desktop. The
+                challenge focuses on real-world skills like data cleaning, analysis, modeling, and dashboard design.</p>
+              <div class="project-tags">
+                <span class="tag">Power BI dashboarding</span>
+                <span class="tag">Data Cleaning</span>
+                <span class="tag">Data Preparation</span>
+                <span class="tag">Exploratory Data Analysis (EDA)</span>
+              </div>
+              <a href="https://github.com/AJEV04/portfolioProjects/tree/main/projects/DataSense%20Analytics%20(DSA)%20Challenge"
+                target="_blank" class="github-link">🐙 View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="img-vid/dashboardCbms.png" class="project-img" />
+            <div class="project-info">
+              <h3 class="project-title">Excel Progress Tracker</h3>
+              <p class="project-desc">An interactive dashboard designed to track the progress of a Map Data Processor at
+                the Philippine Statistics Authority (PSA). It features a search bar for easy navigation and quick access
+                to information on processed areas.</p>
+              <div class="project-tags">
+                <span class="tag">Microsoft Excel</span>
+                <span class="tag">Advanced Formulas</span>
+                <span class="tag">VBA</span>
+                <span class="tag">Data Visualization</span>
+              </div>
+              <a href="https://github.com/AJEV04/portfolioProjects/tree/main/projects/Progress%20Tracker%20(CBMS)"
+                target="_blank" class="github-link">🐙 View on GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <p class="comment"># contact.py</p>
+    <p class="comment"># feel free to reach out!</p>
+
+    <div class="code-block">
+      <p><span class="classname">contact</span> = {</p>
+      <div class="indent">
+        <p><span class="keyword">"email"</span>: <a href="mailto:allenjamesvidal04@gmail.com"
+            class="string link">"allenjamesvidal04@gmail.com"</a>,</p>
+        <p><span class="keyword">"linkedin"</span>: <a href="https://www.linkedin.com/in/allen-james-vidal-230181314/"
+            target="_blank" class="string link">"linkedin.com/in/allen-james-vidal-230181314/"</a>,</p>
+        <p><span class="keyword">"github"</span>: <a href="https://github.com/AJEV04" target="_blank"
+            class="string link">"github.com/AJEV04"</a>,</p>
+      </div>
+      <p>}</p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="comment"># Built by Allen James Vidal · 2026</p>
+    <p class="comment"># I had the ideas, Claude & ChatGPT did the typing - but I understand the code. I think...</p>
+    <span>😅</span>
+  </footer>
+</body>
+
+</html>
