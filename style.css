@@ -24,7 +24,7 @@ a {
 section {
   max-width: 860px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
 }
 
 /* -- NAV -- */
@@ -75,6 +75,10 @@ nav {
 }
 
 /* -- SYNTAX COLORS -- */
+.top {
+  margin-top: 2.5rem;
+}
+
 .comment {
   color: #6a9955;
   font-style: italic;
@@ -270,3 +274,30 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #555555;
 }
+
+/* -- CERTIFICATES -- */
+.cert-item {
+  margin-bottom: 1.5rem;
+}
+
+.cert-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  border: 1px solid #3c3c3c;
+  margin: 0.75rem auto;
+  display: block;
+  transition: border-color 0.2s;
+}
+
+.cert-img:hover {
+  border-color: #0078d4;
+}
+
+#certificates .code-block:hover {
+  border-color: #0078d4;
+}
+
+/* .output-box:hover {
+  border-color: #0078d4;
+} */

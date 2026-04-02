@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>certificates.py</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-tab">
+      <a href="index.html"><span class="tab-icon">🥷 </span>about.py</a>
+    </div>
+    <div class="nav-tab">
+      <a href="index.html#projects"><span class="tab-icon">🗂️ </span>projects.py</a>
+    </div>
+    <div class="nav-tab">
+      <a href="index.html#contact"><span class="tab-icon">📞 </span>contact.py</a>
+    </div>
+    <div class="nav-tab active">
+      <a href="certificates.html"><span class="tab-icon">📜 </span>certificates.py</a>
+    </div>
+  </nav>
+
+  <section id="certificates">
+
+    <p class="comment top"># certificates.py</p>
+    <p class="comment"># things I've learned and proved along the way 📜</p>
+
+    <div class="cell-input">
+      <span class="cell-label">In [1]:</span>
+      <div class="code-block">
+        <p><span class="keyword">import</span> <span class="classname">os</span></p>
+        <br>
+        <p><span class="keyword">project_dir</span> = <span class="string">"/tutorial/session/certificates/"</span>
+        </p>
+        <br>
+        <p><span class="keyword">for</span> <span class="classname">certificates</span> <span class="keyword">in</span>
+          <span class="classname">os</span>.listdir(<span class="keyword">certificates_dir</span>):
+        </p>
+        <div class="indent">
+          <p><span class="classname">open</span>(<span class="classname">certificates</span>)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cell-output">
+      <span class="cell-label">Out [1]:</span>
+      <div class="output-box">
+        <div class="code-block">
+          <p><span class="classname">certificates</span> = [</p>
+          <div class="indent">
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">"Data Science Essentials with
+                    Python"</span>,
+                </p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"DICT-ITU DTC / Cisco Networking
+                    Academy"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2026"</span>,</p>
+                <p><span class="keyword">"link"</span>: <a
+                    href="https://www.credly.com/badges/e4597257-ff39-49a6-a9e9-8878b3c8b0c5"><span
+                      class="string">"Credly
+                      Badge (click me!)"</span>,</p></a>
+              </div>
+              <img src="certs/dataSciencePy.png" alt="Certificate 1" class="cert-img" />
+              <p>},</p>
+            </div>
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">"Fundamentals of Python
+                    Programming"</span>,
+                </p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"Data Analytics Philippines"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2025"</span>,</p>
+              </div>
+              <img src="certs/python.png" alt="Certificate 2" class="cert-img" />
+              <p>},</p>
+            </div>
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">"MySQL Essentials (The Why, What and
+                    How)"</span>,</p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"DataSense Analytics"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2024"</span>,</p>
+              </div>
+              <img src="certs/mySql.png" alt="Certificate 3" class="cert-img" />
+              <p>},</p>
+            </div>
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">"Data Analytics Challenge: Power BI
+                    Dashboard"</span>,</p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"DataSense Analytics"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2025"</span>,</p>
+              </div>
+              <img src="certs/powerBi.png" alt="Certificate 3" class="cert-img" />
+              <p>},</p>
+            </div>
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">"Emerson x DAPH: National Data
+                    Challenge"</span>,</p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"Emerson / Data Analytics
+                    Philippines"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2025"</span>,</p>
+              </div>
+              <img src="certs/daPh.png" alt="Certificate 3" class="cert-img" />
+              <p>},</p>
+            </div>
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">"Getting Started with Microsoft
+                    Excel"</span>,
+                </p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"Coursera"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2024"</span>,</p>
+              </div>
+              <img src="certs/excelCoursera.png" alt="Certificate 3" class="cert-img" />
+              <p>},</p>
+            </div>
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">"Microsoft Office Specialist: Excel
+                    Associate
+                    Certification Training"</span>,</p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"Data Analytics Philippines"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2025"</span>,</p>
+              </div>
+              <img src="certs/excel.png" alt="Certificate 3" class="cert-img" />
+              <p>},</p>
+            </div>
+
+            <div class="cert-item">
+              <p>{</p>
+              <div class="indent">
+                <p><span class="keyword">"title"</span>: <span class="string">""Outsourcing Services WordPress
+                    course</span>,</p>
+                <p><span class="keyword">"issuer"</span>: <span class="string">"Virtual Bears"</span>,</p>
+                <p><span class="keyword">"year"</span>: <span class="string">"2025"</span>,</p>
+              </div>
+              <img src="certs/wordPress.png" alt="Certificate 3" class="cert-img" />
+              <p>},</p>
+            </div>
+
+          </div>
+          <p>]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="comment"># Built by Allen James Vidal · 2025</p>
+    <p class="comment"># I had the ideas, Claude & ChatGPT did the typing - but I understand the code. I think... 😄</p>
+  </footer>
+
+</body>
+
+</html>
