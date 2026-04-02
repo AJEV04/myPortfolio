@@ -281,8 +281,8 @@ footer {
 }
 
 .cert-img {
-  width: 100%;
-  max-width: 500px;
+  width: 60%;
+  max-width: 400px;
   border-radius: 6px;
   border: 1px solid #3c3c3c;
   margin: 0.75rem auto;
