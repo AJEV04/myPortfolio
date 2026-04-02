@@ -301,3 +301,56 @@ footer {
 /* .output-box:hover {
   border-color: #0078d4;
 } */
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+
+  /* NAV */
+  nav {
+    overflow-x: auto;
+    padding: 0 0.5rem;
+  }
+
+  .nav-tab {
+    padding: 0 0.75rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 3rem 1rem;
+  }
+
+  /* CODE BLOCKS */
+  .code-block {
+    padding: 1rem;
+  }
+
+  .indent {
+    padding-left: 1rem;
+  }
+
+  /* JUPYTER CELLS */
+  .cell-input,
+  .cell-output {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cell-label {
+    min-width: auto;
+  }
+
+  /* PROJECTS */
+  .project-img {
+    height: 160px;
+  }
+
+  /* CERTIFICATES */
+  .cert-img {
+    width: 90%;
+  }
+
+}
